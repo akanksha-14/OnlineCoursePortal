@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register-Fortify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+    <!-- Header -->
+    <header class="primary-header container group">
+        <h1 class="logo">
+            <a  class="mlogo" href="index.html">Fortify</a>
+        </h1>
+
+        <nav class="nav primary-nav">
+            <a href="index.html">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Registration Form -->
+    <section class="row">
+        <div class="form">
+            <h2 class="h2">Registration Form</h2>
+            <h4>Please provide all required details to complete your registration</h4>
+            <br>
+            <form action="submission.php" method="post">
+                <fieldset class="register">
+                    <label>
+                        Name :
+                    </label>
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    
+                    <br><br>
+                    <label>
+                        Email :
+                    </label>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <br><br>
+                    <label>
+                        Contact No. :
+                    </label>
+                    <input type="number" name="contact" placeholder="Contact Number" min="1000000000" max="9999999999">
+                    <br><br>
+                   <div class="dropdown">
+                        <label>Course :</label> <select name="course" required>
+                            <option>Select Course</option>
+                            <option>Artifical Intelligence</option>
+                            <option>Machine Learing</option>
+                            <option>App Development</option>
+                            <option>Web Designing</option>
+                            <option>Data Science</option>
+                        </select>
+                   </div>
+                   <br><br>
+                   <div>
+                       <input class="btnn" type="submit" value="Submit">
+                   </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="primary-footer container group">
+        <small>&copy; Akanksha Choudhary</small>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
